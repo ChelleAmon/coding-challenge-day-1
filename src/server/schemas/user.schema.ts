@@ -9,7 +9,7 @@ const userSchema = new Schema<User>({
     age: {type: Number},
 }, opts)
 
-userSchema.virtual('intro').get(function(this: any){
+userSchema.virtual('intro').get(function(this: User){
     return `${this.first_name} ${this.last_name} is ${this.age} years old.`
 })
 
