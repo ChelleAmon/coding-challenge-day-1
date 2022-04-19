@@ -28,9 +28,8 @@ function addUsername(list){
         let fName = (Object.values(list[i]["firstName"])).join('').toLowerCase()
         let lName = (Object.values(list[i]["lastName"])).join('').slice(0,1).toLowerCase()
         let age =  list[i].age
-        let year = new Date(Date.now()).getFullYear() - 2
+        let year = new Date(Date.now()).getFullYear()
 
-        console.log(f)
 
         list[i]["username"] = fName + lName + (year - age)
         i++;

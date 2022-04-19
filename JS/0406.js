@@ -24,7 +24,7 @@ function findInteger(nums){
     }
 }
 
-
 findInteger([7, 8, 8])
 findInteger([1,2,2,3,3,3,4,3,3,3,2,2,1])
+findInteger([0,1,0,1,0])
 

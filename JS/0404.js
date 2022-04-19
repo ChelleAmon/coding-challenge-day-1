@@ -4,7 +4,7 @@
 // Test 1:- Input : 2020,  Expected output:- 1
 // Test 2:- Input : 22,  Expected output:- 0
 
-
+// wrong function!!!
 function selfDescribe(num){
     const input = num.toString().split('').map(Number)
     const keys = [...Array(input.length).keys()]

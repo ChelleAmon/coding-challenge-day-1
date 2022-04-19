@@ -1,3 +1,5 @@
+const { execPath } = require("process");
+
 class Result{
     constructor(value1, value2, value3, primary){
         this.value1 = value1;
@@ -34,11 +36,11 @@ function arrayIntersection(array1, array2) {
     return answer;
 }
 
-function findIntersectionOfEachKey(name) 
+function findIntersectionOfEachKey(name) {
     let result = [];
     Object.keys(results).forEach(key => {
         if (key !== name) {
-            let intersection = arrayIntersection(results[name].toArray(), results[key].toArray());
+           let intersection = arrayIntersection(results[name].toArray(), results[key].toArray());
             result.push({
                 name: key,
                 intersection,
